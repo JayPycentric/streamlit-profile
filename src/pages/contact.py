@@ -6,7 +6,7 @@ def display_contact():
     st.write("I am always open to discussing backend, cloud architecture, or potential collaborations.")
     st.divider()
 
-    col_linkedin, col_cv = st.columns(2, border=True)
+    col_linkedin, col_cv, col_github,col_email = st.columns(4, border=True)
     with col_linkedin:
         st.subheader("Professional Network")
         st.write("Let's connect on LinkedIn")
@@ -25,4 +25,15 @@ def display_contact():
             st.error("CV File not found.")
             st.button("CV Unavailable", disabled=True)
 
-   
+    with col_github:
+        st.subheader("Code Collab")
+        st.write("Let's collaborate on GitHub")
+        # Link to my GitHub
+        st.link_button("View LinkedIn Profile", url="https://github.com/JadeonMiller", type="primary")
+
+
+    with col_email:
+        st.subheader("Direct Inquiry")
+        st.write("Feel free to contact me via Email")
+        # Link to my email
+        st.link_button("Send Email", "mailto:jadeon@pycentric.co.za", type="primary")
