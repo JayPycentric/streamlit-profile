@@ -40,8 +40,10 @@ def display_cloud():
     st.title("Cloud", text_alignment="center")
     left, center, right = st.columns([1, 1, 1])
     with center:
-        st.image("resources/images/icons/AWS.png", width=200)
-
+        with st.container():
+            st.markdown("---")
+            st.image("resources/images/icons/AWS.png", width=250)
+            st.markdown("---")
 
 def display_about():
     st.title("About Me", text_alignment="center")
@@ -63,6 +65,7 @@ def display_about():
 
     st.write_stream(text_generator)
 
+    st.divider()
     display_tech_stack()
     display_tools()
     display_cloud()
