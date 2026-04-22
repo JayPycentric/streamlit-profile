@@ -43,7 +43,7 @@ def display_contact():
         st.subheader("Code Collab")
         st.write("Let's collaborate on GitHub")
         # Link to my GitHub
-        st.link_button("View LinkedIn Profile", url="https://github.com/JadeonMiller", type="primary")
+        st.link_button("View GitHub Profile", url="https://github.com/JadeonMiller", type="primary")
 
 
     with col_email:
