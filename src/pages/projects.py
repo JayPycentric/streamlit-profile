@@ -26,7 +26,7 @@ def display_projects():
             
             btn1, btn2 = st.columns(2)
             with btn1:
-                st.link_button("View Code (GitHub)", "https://github.com/JadeonMiller/Rugby-Union-Tracker")
+                st.link_button("View Code (GitHub)", "https://github.com/JadeonMiller/Rugby-Union-Tracker", type="primary")
             with btn2:
                 st.button("Demo Coming Soon", disabled=True, key="demo1")
 
@@ -51,6 +51,6 @@ def display_projects():
             
             btn1, btn2 = st.columns(2)
             with btn1:
-                st.link_button("View Code (GitHub)", "https://github.com/JadeonMiller/Signly-Angular")
+                st.link_button("View Code (GitHub)", "https://github.com/JadeonMiller/Signly-Angular", type="primary")
             with btn2:
                 st.button("Demo Coming Soon", disabled=True, key="demo2")
