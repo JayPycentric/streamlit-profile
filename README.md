@@ -71,7 +71,7 @@ uv --version
 
 ```bash
 # Clone the repo
-git clone https://github.com/JayPycentric/streamlit-profile
+git clone git@github.com:JayPycentric/streamlit-profile.git
 
 # Install project dependencies with uv
 uv sync 
