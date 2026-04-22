@@ -2,6 +2,20 @@ import streamlit as st
 
 def display_contact():
 
+    st.markdown(
+        """
+        <style>
+            /* This targets the main content area and forces it to fill the screen */
+            .block-container {
+                max-width: 100% !important;
+                padding-left: 5rem !important;
+                padding-right: 5rem !important;
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
     st.title(":material/contact_mail: Get In Touch", anchor=False)
     st.write("I am always open to discussing backend, cloud architecture, or potential collaborations.")
     st.divider()
