@@ -1,6 +1,48 @@
 import streamlit as st
 import time
 
+def display_tech_stack():
+    st.title("Tech Stack", text_alignment="center") 
+    
+    stack1, stack2, stack3, stack4 = st.columns(4, border=True)
+
+    with stack1:
+        st.image("resources/images/icons/python.png", caption="Python")
+
+    with stack2:
+        st.image("resources/images/icons/Flask.png", caption="Flask")
+
+    with stack3:
+        st.image("resources/images/icons/SQLite.png", caption="SQLite")
+
+    with stack4:
+        st.image("resources/images/icons/Angular.png", caption="Angular")
+
+
+def display_tools():
+    st.title("Tools", text_alignment="center") 
+    
+    tool1, tool2, tool3, tool4 = st.columns(4, border=True)
+
+    with tool1:
+        st.image("resources/images/icons/Git.png", caption="Git")
+
+    with tool2:
+        st.image("resources/images/icons/Docker.png", caption="Docker")
+
+    with tool3:
+        st.image("resources/images/icons/Linux.png", caption="Linux")
+
+    with tool4:
+        st.image("resources/images/icons/Postman.png", caption="Postman")
+
+def display_cloud():
+    st.title("Cloud", text_alignment="center")
+    left, center, right = st.columns([1, 1, 1])
+    with center:
+        st.image("resources/images/icons/AWS.png", width=200)
+
+
 def display_about():
     st.title("About Me", text_alignment="center")
 
@@ -17,11 +59,10 @@ def display_about():
     def text_generator():
         for word in about_text.split(" "):
             yield word + " "
-            time.sleep(0.15)
+            time.sleep(0.05)
 
     st.write_stream(text_generator)
 
-
-def display_tech():
-    # TODO
-    pass
+    display_tech_stack()
+    display_tools()
+    display_cloud()
